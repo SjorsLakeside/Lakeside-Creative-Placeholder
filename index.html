@@ -85,6 +85,61 @@
             width: 20px;
             height: 20px;
         }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            .footer-left {
+                display: none; /* Hide footer-left on smaller screens */
+            }
+            .footer-right {
+                order: -1; /* Move the icons above the logo */
+                margin-bottom: 15px;
+            }
+            .footer-center {
+                position: static;
+                transform: none;
+            }
+            .logo-text {
+                font-size: 20pt;
+            }
+            .subtitle {
+                font-size: 8pt;
+            }
+            .underline {
+                width: 80px;
+            }
+            .footer-right img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .busy-coding {
+                font-size: 18pt;
+            }
+            .logo-text {
+                font-size: 18pt;
+            }
+            .subtitle {
+                font-size: 7pt;
+            }
+            .underline {
+                width: 60px;
+            }
+            .footer {
+                padding: 15px;
+            }
+            .footer-right img {
+                width: 20px;
+                height: 20px;
+            }
+        }
     </style>
 </head>
 <body>
